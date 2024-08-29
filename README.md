@@ -127,6 +127,7 @@ POST https://odbygursl9.execute-api.us-east-2.amazonaws.com/dev/api/inventory/sa
 Authentication:
 ## User registration:
 POST https://odbygursl9.execute-api.us-east-2.amazonaws.com/dev/api/register
+
 User login:
 POST https://odbygursl9.execute-api.us-east-2.amazonaws.com/dev/api/login
 
