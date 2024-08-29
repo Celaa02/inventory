@@ -108,14 +108,19 @@ GET https://odbygursl9.execute-api.us-east-2.amazonaws.com/dev/db
 ## Inventory:
 Get list of inventories:
 GET https://odbygursl9.execute-api.us-east-2.amazonaws.com/dev/api/inventory
+
 Get inventory by ID:
 GET https://odbygursl9.execute-api.us-east-2.amazonaws.com/dev/api/inventory/{id}
+
 Create new inventory:
 POST https://odbygursl9.execute-api.us-east-2.amazonaws.com/dev/api/inventory
+
 Update inventory by ID:
 PUT https://odbygursl9.execute-api.us-east-2.amazonaws.com/dev/api/inventory/{id}
+
 Delete inventory by ID:
 DELETE https://odbygursl9.execute-api.us-east-2.amazonaws.com/dev/api/inventory/{id}
+
 Outflow
 POST https://odbygursl9.execute-api.us-east-2.amazonaws.com/dev/api/inventory/salida
 
