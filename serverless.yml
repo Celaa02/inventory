@@ -1,0 +1,52 @@
+org: testfree
+service: soft-lambda
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  region: us-east-2
+functions:
+  api:
+    handler: handler.handler
+    events:
+      - http:
+          path: /
+          method: get
+          cors: true
+      - http:
+          path: /db
+          method: get
+          cors: true
+      - http:
+          path: api/inventory
+          method: get
+          cors: true
+      - http:
+          path: api/inventory/{id}
+          method: get
+          cors: true
+      - http:
+          path: api/inventory
+          method: post
+          cors: true
+      - http:
+          path: api/inventory/{id}
+          method: put
+          cors: true
+      - http:
+          path: api/inventory/{id}
+          method: delete
+          cors: true
+      - http:
+          path: api/inventory/salida
+          method: post
+          cors: true
+      - http:
+          path: api/register
+          method: post
+          cors: true
+      - http:
+          path: api/login
+          method: post
+          cors: true
+        
